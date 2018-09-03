@@ -1,0 +1,26 @@
+.request-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.request-fields > input {
+  width: 250px;
+}
+.input-block {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  text-align: center;
+}
+
+.control-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.control-btn > button {
+  margin: 5px;
+}

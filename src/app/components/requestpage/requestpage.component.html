@@ -1,0 +1,29 @@
+<h1>REQUEST</h1>
+<div class="request-wrap">
+  <div class="request-fields">
+    <div class="input-block">
+      <input [(ngModel)]="user.FName" placeholder="first name" [disabled]="isFName">
+      <button (click)="isFName=!isFName">E</button><button (click)="user.FName=oldUser.FName">X</button>
+    </div>
+    <div class="input-block">
+      <input [(ngModel)]="user.LName" placeholder="last name" [disabled]="isLName">
+      <button (click)="isLName=!isLName">E</button><button (click)="user.LName=oldUser.LName">X</button>
+    </div>
+    <div class="input-block">
+      <input [(ngModel)]="user.Code" placeholder="code" [disabled]="isCode">
+      <button (click)="isCode=!isCode">E</button><button (click)="user.Code=oldUser.Code">X</button>
+    </div>
+    <div class="input-block">
+      <input [(ngModel)]="user.Phone" placeholder="phone number" [disabled]="isPhone">
+      <button (click)="isPhone=!isPhone">E</button><button (click)="user.Phone=oldUser.Phone">X</button>
+    </div>
+    <div class="input-block">
+      <input [(ngModel)]="user.Address" placeholder="address" [disabled]="isAddress">
+      <button (click)="isAddress=!isAddress">E</button><button  (click)="user.Address=oldUser.Address">X</button>
+    </div>
+  </div>
+</div>
+<div class="control-btn">
+  <button (click)="gotoMainPage('/mainpage')">Go Back</button>
+  <button (click)="onSave()">Save</button>
+</div>
